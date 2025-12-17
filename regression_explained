@@ -1,0 +1,40 @@
+# What is Regression? (Machine Learning)
+
+Regression is a technique used to predict a continuous value.
+
+## Simple Meaning
+Regression answers questions like:
+- What will be the house price?
+- What will be the salary?
+- What will be the temperature tomorrow?
+
+## Real-life example
+Suppose we want to predict salary based on years of experience.
+
+| Experience (years) | Salary (LPA) |
+|--------------------|--------------|
+| 1                  | 3            |
+| 2                  | 5            |
+| 4                  | 8            |
+
+Regression finds a relationship between experience and salary.
+
+## Linear Regression
+In linear regression, we assume the relationship is a straight line.
+
+Equation:
+y = mx + c
+
+Where:
+- x = input
+- y = output
+- m = slope
+- c = intercept
+
+## Why regression is important
+- Used in prediction problems
+- Used in finance, healthcare, and analytics
+- One of the basics of Machine Learning
+
+## Conclusion
+Regression helps us understand relationships between variables and make predictions.
