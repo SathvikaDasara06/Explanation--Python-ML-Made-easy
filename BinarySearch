@@ -1,0 +1,35 @@
+# Binary Search – Intuition and Example
+
+Binary search is an efficient algorithm to find an element in a sorted array.
+
+## Key condition
+The array must be sorted.
+
+## Intuition
+Instead of checking each element one by one, binary search:
+- Checks the middle element
+- Eliminates half of the array each time
+
+## Example
+Array: [2, 4, 6, 8, 10, 12]
+
+To find 8:
+1. Middle element is 6 → 8 > 6 → go right
+2. New middle is 10 → 8 < 10 → go left
+3. Found 8
+
+## Code
+
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
